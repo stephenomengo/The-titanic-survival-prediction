@@ -2,7 +2,7 @@
 
 Predicting which passengers survived the Titanic using engineered features, a five-model comparison, tuning and stacking. Built on the Kaggle [Titanic: Machine Learning from Disaster](https://www.kaggle.com/competitions/titanic) dataset.
 
-**Kaggle score:** _add after submitting_
+**Kaggle score:** 
 
 ## Approach
 1. **EDA**: survival by sex, class, age and missing-value check.
