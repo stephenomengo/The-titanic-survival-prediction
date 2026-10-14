@@ -2,7 +2,7 @@
 
 Predicting which passengers survived the Titanic using engineered features, a five-model comparison, tuning and stacking. Built on the Kaggle [Titanic: Machine Learning from Disaster](https://www.kaggle.com/competitions/titanic) dataset.
 
-**Kaggle score:** 
+**Kaggle score:** 0.77272 (tuned SVM, public leaderboard)
 
 ## Approach
 1. **EDA**: survival by sex, class, age and missing-value check.
@@ -14,9 +14,15 @@ Predicting which passengers survived the Titanic using engineered features, a fi
 7. **Evaluation**: hold-out confusion matrix and permutation importance.
 
 ## Results
-| Model | Accuracy | F1 | ROC-AUC |
+| Model | CV Accuracy | F1 | ROC-AUC |
 |---|---|---|---|
-| _fill from notebook section 4_ | | | |
+| SVM | 0.8294 | 0.7671 | 0.8573 |
+| Logistic Regression | 0.8283 | 0.7727 | 0.8719 |
+| HistGradientBoosting | 0.8226 | 0.7658 | 0.8811 |
+| XGBoost | 0.8181 | 0.7625 | 0.8744 |
+| Random Forest | 0.8159 | 0.7571 | 0.8727 |
+| **Tuned SVM** | **0.835** | n/a | n/a |
+| **Stack (SVM + LogReg + HistGB)** | **0.8474** | 0.7898 | n/a |
 
 ## Project structure
 ```
